@@ -1,7 +1,7 @@
 import React from 'react';
-
 import SectorDonutChart from './SectorDonutChart';
 import SectorBarChart from './SectorBarChart';
+import SectorOverview from './SectorOverview';
 
 function Home() {
   return (
@@ -11,6 +11,11 @@ function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <SectorDonutChart />
         <SectorBarChart />
+      </div>
+      <div className="flex justify-center mt-16">
+        <div className="w-full max-w-4xl">
+          <SectorOverview />
+        </div>
       </div>
     </div>
   );
